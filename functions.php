@@ -219,4 +219,12 @@ function p2h_comment($comment, $args, $depth) {
 			break;
 	endswitch;
 }
+
+
+// Fix removal of apostrophes and accuented characters in title
+remove_filter ('single_post_title', 'wptexturize');
+remove_filter ('bloginfo', 'wptexturize');
+remove_filter ('wp_title', 'wptexturize');
+remove_filter ('the_title', 'wptexturize');
+
 ?>

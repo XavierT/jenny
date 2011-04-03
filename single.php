@@ -7,7 +7,7 @@
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="post-header">
 				<h1><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-				<p><?php _e('By', 'jenny');?> <?php the_author_posts_link(); ?> | <?php the_time('F j, Y') ?></p>
+				<p><?php _e('Par', 'jenny');?> <?php the_author_posts_link(); ?> | <?php the_time('j F Y') ?></p>
 			</div>
 			
 			<!--Show Ads Below Post Title -->
@@ -29,17 +29,17 @@
 			
 			<div class="post-meta">
 				<ul>
-					<li><?php comments_popup_link( __('Leave your comment', 'jenny'), __( '1 comment', 'jenny'), __('% comments', 'jenny')); ?> &bull; <?php the_category(' &bull; ');?></li>
-					<?php the_tags( __('<li>Tagged as: ', 'jenny'), ' &bull; ', '</li>'); ?>
-					<li><?php _e('Share on ', 'jenny'); ?><a href="http://twitter.com/home?status=Currently reading: <?php the_title_attribute(); ?> <?php the_permalink(); ?>"><?php _e('Twitter','jenny'); ?></a>, <a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>&amp;t=<?php the_title_attribute(); ?>"><?php _e('Facebook', 'jenny'); ?></a>, <a href="http://del.icio.us/post?v=4;url=<?php the_permalink(); ?>"><?php _e('Delicious', 'jenny'); ?></a>, <a href="http://digg.com/submit?url=<?php the_permalink(); ?>"><?php _e('Digg', 'jenny'); ?></a>, <a href="http://www.reddit.com/submit?url=<?php the_permalink(); ?>&amp;title=<?php the_title_attribute(); ?>"><?php _e('Reddit', 'jenny'); ?></a></li>
-					<?php edit_post_link(__('Edit this post','jenny'), '<li>', '</li>'); ?>
+					<li><?php comments_popup_link( __('Laissez un commentaire', 'jenny'), __( '1 commentaire', 'jenny'), __('% commentaires', 'jenny')); ?> &bull; <?php the_category(' &bull; ');?></li>
+					<?php the_tags( __('<li>Tags: ', 'jenny'), ' &bull; ', '</li>'); ?>
+					<li><?php _e('Partager sur ', 'jenny'); ?><a href="http://twitter.com/home?status=Currently reading: <?php the_title_attribute(); ?> <?php the_permalink(); ?>"><?php _e('Twitter','jenny'); ?></a>, <a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>&amp;t=<?php the_title_attribute(); ?>"><?php _e('Facebook', 'jenny'); ?></a></li>
+					<?php edit_post_link(__('Editer ce message','jenny'), '<li>', '</li>'); ?>
 				</ul>
 			</div>
 			
 		<!--Next Previous Links-->
 		<ul class="next-prev-links">
-				<li><?php previous_post_link('%link',  __('&laquo;Previous Post','jenny') );?></li>
-				<li><?php next_post_link('%link', __('Next Post &raquo;','jenny') ); ?></li>
+				<li><?php previous_post_link('%link',  __('&laquo;Message précédent','jenny') );?></li>
+				<li><?php next_post_link('%link', __('Message suivant &raquo;','jenny') ); ?></li>
 		</ul>	
 
 			<!--RELATED POSTS-->
@@ -57,7 +57,7 @@
 			  $my_query = new WP_Query($args);
 			  if( $my_query->have_posts() ) {
 			      echo "<div class=\"relatedposts\">";
-			      _e('<h3 class="relatedtitle">Related Posts</h3>','jenny');
+			      _e('<h3 class="relatedtitle">Recettes similaires </h3>','jenny');
 			      echo "<ul>";
 			    while ($my_query->have_posts()) : $my_query->the_post(); ?>
 		  

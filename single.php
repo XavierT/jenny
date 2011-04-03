@@ -38,8 +38,8 @@
 			
 		<!--Next Previous Links-->
 		<ul class="next-prev-links">
-				<li><?php previous_post_link('%link',  __('&laquo;Message précédent','jenny') );?></li>
-				<li><?php next_post_link('%link', __('Message suivant &raquo;','jenny') ); ?></li>
+				<li><?php previous_post_link('%link',  __('&laquo;Recette précédente','jenny') );?></li>
+				<li><?php next_post_link('%link', __('Recette suivante &raquo;','jenny') ); ?></li>
 		</ul>	
 
 			<!--RELATED POSTS-->

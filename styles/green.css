@@ -354,6 +354,14 @@ margin-right:7px;
 
 /* ----------------------------------------- [ Content ] */
 
+/* Hack for list on link in index and page */
+
+#content #page li {
+    margin-top : 10px;
+    margin-bottom : 10px;
+}
+
+
 #content {
 	padding: 15px 0;
 	float: left;

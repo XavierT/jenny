@@ -12,6 +12,7 @@ Template Name: IndexSale
 
 		<!-- Content -->
 		<div id="content">
+            <div id="page">
 
 			<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
@@ -22,7 +23,7 @@ Template Name: IndexSale
 				</div>
 				<div class="post-entry">
 					<?php the_content('Read <span>more...</span>'); ?>
-				  <h3> Entrées </h3>
+				  <h2> Entrées </h2>
 				  <ul>
 					  <?php
 					  //The Query
@@ -48,7 +49,8 @@ Template Name: IndexSale
 					  wp_reset_query();?>
 
 				  </ul>
-				  <h3> Galettes végétales </h3>
+                  <br>
+				  <h2> Galettes végétales </h2>
 				  <ul>
 					  <?php
 					  //The Query
@@ -74,7 +76,8 @@ Template Name: IndexSale
 					  wp_reset_query();?>
 
 				  </ul>
-				  <h3> Légumes </h3>
+                  <br>
+				  <h2> Légumes </h2>
 				  <ul>
 					  <?php
 					  //The Query
@@ -100,7 +103,8 @@ Template Name: IndexSale
 					  wp_reset_query();?>
 
 				  </ul>
-				  <h3> Pains </h3>
+                  <br>
+				  <h2> Pains </h2>
 				  <ul>
 					  <?php
 					  //The Query
@@ -126,7 +130,8 @@ Template Name: IndexSale
 					  wp_reset_query();?>
 
 				  </ul>
-				  <h3> Poissons et fruits de mer </h3>
+                  <br>
+				  <h2> Poissons et fruits de mer </h2>
 				  <ul>
 					  <?php
 					  //The Query
@@ -152,7 +157,8 @@ Template Name: IndexSale
 					  wp_reset_query();?>
 
 				  </ul>
-				  <h3> Pour ouvrir l'appétit... </h3>
+                  <br>
+				  <h2> Pour ouvrir l'appétit... </h2>
 				  <ul>
 					  <?php
 					  //The Query
@@ -178,7 +184,8 @@ Template Name: IndexSale
 					  wp_reset_query();?>
 
 				  </ul>
-				  <h3> Soupes </h3>
+                  <br>
+				  <h2> Soupes </h2>
 				  <ul>
 					  <?php
 					  //The Query
@@ -204,7 +211,8 @@ Template Name: IndexSale
 					  wp_reset_query();?>
 
 				  </ul>
-				  <h3> Terrines, tartes et autres cakes salés </h3>
+                  <br>
+				  <h2> Terrines, tartes et autres cakes salés </h2>
 				  <ul>
 					  <?php
 					  //The Query
@@ -230,7 +238,8 @@ Template Name: IndexSale
 					  wp_reset_query();?>
 
 				  </ul>
-				  <h3> Viandes </h3>
+                  <br>
+				  <h2> Viandes </h2>
 				  <ul>
 					  <?php
 					  //The Query
@@ -276,6 +285,8 @@ Template Name: IndexSale
 
 			<div class="clear"></div>
 
+            </div>
+		<!-- /Page -->
 		</div>
 		<!-- /Content -->
 

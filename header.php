@@ -5,6 +5,13 @@
 
 <head profile="http://gmpg.org/xfn/11">
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+    <meta name="google-site-verification" content="VU-nfTo_TYdMaJfQSPLaIShaWjVhMs1R_1mVKwa2yBs" />
+    <meta name="msvalidate.01" content="DA4AD64FD1E5EF4146C0569E5D928913" />
+
+	<meta name="description" content="Blog de cuisine de Lilie. Recettes bio, sucrées et salées pour tous les jours. Cuisine inventive, fraîche et gourmande." />
+
+	<meta name="keywords" content="cuisine, bio, petits, pois, recette, ingrédients, ingrédient blog, boissons, entrées, viandes, petites, douceurs, fraîche, gourmande"/>
+
 	<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<?php 

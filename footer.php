@@ -21,6 +21,20 @@
 		
 <script type="text/javascript"> Cufon.now(); </script>
 
+<!-- script analytics -->
+<?php if (!current_user_can('edit_users')) { ?>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-11570359-1");
+pageTracker._trackPageview();
+</script>
+<?php } else { ?>
+ADMIN, pas de tracking analytics
+<?php } ?>
+
 <!-- Do not remove this, it's required for certain plugins which generally use this hook to reference JavaScript files. -->
 <?php wp_footer(); ?>	
 </body>
